@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Malik Muneeb | Senior Android Engineer & KMP Specialist</title>
+  <meta name="title" content="Malik Muneeb | Senior Android Engineer">
+  <meta name="description" content="Portfolio of Malik Muneeb, Senior Android Engineer with 5+ years experience specializing in Kotlin, Jetpack Compose, Kotlin Multiplatform (KMP), Compose Multiplatform (CMP), Ktor, and WebSockets.">
+  <meta name="keywords" content="Malik Muneeb, Android Developer, Kotlin Multiplatform, KMP, Compose Multiplatform, CMP, Jetpack Compose, Senior Android Engineer, Mobile Developer, Portfolio">
+  <meta name="author" content="Malik Muneeb">
+
+  <!-- Favicon (Android SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233DDC84'><path d='M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navbar
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-badge">
+          <!-- Android Robot Head Icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/>
+          </svg>
+        </span>
+        <span>Muneeb<span style="color: var(--accent-android);">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+        <button class="hamburger" aria-label="Toggle navigation" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-beacon"></span>
+          <span>Available for Senior Android / KMP Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <br>
+          <span class="name-highlight">Malik Muneeb</span>
+        </h1>
+
+        <div class="hero-role-wrapper">
+          <span>&gt;</span>
+          <span class="hero-role"></span>
+          <span class="cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          Senior Android Developer with <strong>5+ years experience</strong> and a BS in Software Engineering. Proven track record building enterprise fintech architectures, real-time WebSocket applications, and cross-platform apps using <strong>Kotlin</strong>, <strong>Jetpack Compose</strong>, and <strong>Kotlin Multiplatform (KMP/CMP)</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="assets/Malik_Muneeb_Resume.pdf" download="Malik_Muneeb_Resume.pdf" class="btn btn-kotlin" target="_blank">
+            <span>Download Resume</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/malikmuneeb981" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Google Play Store">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.954V2.768c.15-.37.362-.697.609-.954zm11.246 11.248l2.25 2.25-11.83 6.83 9.58-9.08zm0-2.124l-9.58-9.08 11.83 6.83-2.25 2.25zm1.488 1.062l3.434-1.982a1.868 1.868 0 0 1 0 3.238l-3.434 1.982-1.062-1.619 1.062-1.619z"/></svg>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malikmuneeb981@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Send Email via Gmail">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.214 7.466 1.786 1.448 1.786-1.448 9.214-7.466v11.817h-22z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Graphic / Glowing Card -->
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-inner">
+            <div class="avatar-img-placeholder">
+              <svg class="avatar-robot-icon" viewBox="0 0 24 24" fill="#3DDC84">
+                <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/>
+              </svg>
+              <div class="avatar-caption">package com.muneeb.portfolio</div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-chip chip-1">
+            <span style="color: var(--accent-kotlin);">🟣</span> KMP & CMP
+          </div>
+          <div class="floating-chip chip-2">
+            <span style="color: var(--accent-android);">🟢</span> Jetpack Compose
+          </div>
+          <div class="floating-chip chip-3">
+            <span style="color: var(--accent-cyan);">⚡</span> Ktor & WebSockets
+          </div>
+          <div class="floating-chip chip-4">
+            <span style="color: var(--accent-amber);">💳</span> Fintech & BNPL
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Stats Bar
+       ========================================================================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid" id="stats-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Engineering Focus</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Dedicated to creating scalable, testable, and butter-smooth mobile experiences.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hello! I'm <strong>Malik Muneeb</strong>, a Senior Android Developer with <strong>5+ years of hands-on experience</strong> and a Bachelor of Science in Software Engineering from BUITEMS.
+          </p>
+          <p>
+            Throughout my career at companies like <strong>AKSA-SDS</strong> and <strong>Funprime Technology</strong>, I have engineered diverse, high-impact mobile solutions—ranging from enterprise fintech architectures (JazzCash, C2C bulk payments, Buy Now Pay Later) to AI-powered apps (AI Photo Editor, Voice Translators using Accessibility Services) and real-time WebSocket communication platforms.
+          </p>
+          <p>
+            I specialize in declarative UIs with **Jetpack Compose**, multiplatform development with **Kotlin Multiplatform (KMP)** & **Compose Multiplatform (CMP)**, real-time networking via **Ktor & WebSockets**, and modern Clean Architecture. I also have foundational knowledge of **iOS & SwiftUI**.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🌐</div>
+              <div>
+                <div class="highlight-title">KMP & CMP</div>
+                <div class="highlight-desc">Shared logic and UI across mobile platforms</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">💳</div>
+              <div>
+                <div class="highlight-title">Fintech & Payments</div>
+                <div class="highlight-desc">JazzCash, C2C Bulk Payments, BNPL workflows</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div>
+                <div class="highlight-title">Real-Time Sync</div>
+                <div class="highlight-desc">Ktor backend, WebSockets & Location Services</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⌨️</div>
+              <div>
+                <div class="highlight-title">Custom IME & System Services</div>
+                <div class="highlight-desc">Voice typing keyboards & Accessibility Services</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture Stack Visual -->
+        <div class="about-architecture-card">
+          <div class="arch-header">
+            <h3>Modern Android & KMP Stack</h3>
+            <span class="arch-tag">Core Architecture</span>
+          </div>
+
+          <div class="arch-layers">
+            <div class="arch-layer">
+              <span class="arch-layer-name">🎨 UI Layer</span>
+              <span class="arch-layer-tech">Jetpack Compose • Compose Multiplatform • Material 3</span>
+            </div>
+            <div class="arch-layer">
+              <span class="arch-layer-name">🌐 Multiplatform & iOS</span>
+              <span class="arch-layer-tech">Kotlin Multiplatform (KMP) • SwiftUI Foundation</span>
+            </div>
+            <div class="arch-layer">
+              <span class="arch-layer-name">⚙️ Concurrency & State</span>
+              <span class="arch-layer-tech">Kotlin Coroutines • StateFlow • MVI / MVVM</span>
+            </div>
+            <div class="arch-layer">
+              <span class="arch-layer-name">⚡ Real-time & Network</span>
+              <span class="arch-layer-tech">Ktor • WebSockets • REST APIs • Retrofit</span>
+            </div>
+            <div class="arch-layer">
+              <span class="arch-layer-name">💾 Background & Storage</span>
+              <span class="arch-layer-tech">RoomDb • WorkManager • Accessibility Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Skills Section
+       ========================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Proficiency</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">A comprehensive toolkit honed across native Android, KMP, and mobile ecosystems.</p>
+      </div>
+
+      <div class="skills-container" id="skills-container">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Section
+       ========================================================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Applications & Projects</h2>
+        <p class="section-subtitle">Real-world applications built from scratch showcasing KMP, Compose, Fintech, and Real-time WebSockets.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="kmp">KMP / Multiplatform</button>
+        <button class="filter-btn" data-filter="fintech">Fintech & Payments</button>
+        <button class="filter-btn" data-filter="realtime">Real-Time & WebSockets</button>
+        <button class="filter-btn" data-filter="compose">Jetpack Compose & AI</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Experience & Education Section
+       ========================================================================== -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">5+ years of delivering high-performance Android & cross-platform applications.</p>
+      </div>
+
+      <div class="timeline" id="experience-timeline">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Education Subsection -->
+      <div style="margin-top: 5rem;">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="section-tag" style="background: rgba(127, 82, 255, 0.1); border-color: rgba(127, 82, 255, 0.25); color: var(--accent-kotlin);">Academic Background</span>
+          <h2 class="section-title" style="font-size: 2rem;">Education</h2>
+        </div>
+
+        <div class="timeline" id="education-container">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project, role, or collaboration in mind? Reach out directly!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">📧</div>
+              <div>
+                <div class="contact-label">Email Address</div>
+                <div class="contact-val">malikmuneeb981@gmail.com</div>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy="malikmuneeb981@gmail.com" title="Copy Email">Copy</button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">📱</div>
+              <div>
+                <div class="contact-label">Phone / WhatsApp</div>
+                <div class="contact-val">+92 347 3366889</div>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy="+92 347 3366889" title="Copy Phone Number">Copy</button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card">
+            <div class="contact-card-left">
+              <div class="contact-icon-box">📍</div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Islamabad, Pakistan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Socials Connect Card -->
+          <div class="contact-card" style="justify-content: flex-start; gap: 1.5rem;">
+            <a href="https://github.com/malikmuneeb981" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Google Play">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.954V2.768c.15-.37.362-.697.609-.954zm11.246 11.248l2.25 2.25-11.83 6.83 9.58-9.08zm0-2.124l-9.58-9.08 11.83 6.83-2.25 2.25zm1.488 1.062l3.434-1.982a1.868 1.868 0 0 1 0 3.238l-3.434 1.982-1.062-1.619 1.062-1.619z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="form-name">Your Name</label>
+            <input type="text" id="form-name" class="form-control" placeholder="e.g. Alex Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-email">Your Email</label>
+            <input type="email" id="form-email" class="form-control" placeholder="e.g. alex@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-message">Your Message</label>
+            <textarea id="form-message" class="form-control" placeholder="Hi Muneeb, let's discuss an Android / KMP project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>Send Message</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-text">
+        &copy; 2026 <strong>Malik Muneeb</strong>. Senior Android & KMP Engineer.
+      </div>
+      <button class="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Project Detail Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <h2 id="modal-title" style="font-size: 1.5rem; font-weight: 700;">Project Title</h2>
+          <p id="modal-tagline" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.25rem;">Project Tagline</p>
+        </div>
+        <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section-title">Tech Stack & Tools</div>
+        <div class="project-tags" id="modal-tags"></div>
+
+        <div class="modal-section-title">Key Technical Highlights</div>
+        <ul class="modal-highlights-list" id="modal-highlights"></ul>
+
+        <div class="modal-section-title">Architecture & System Design</div>
+        <div class="modal-arch-box" id="modal-architecture"></div>
+      </div>
+
+      <div class="modal-footer">
+        <a id="modal-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>View Source Code</span>
+        </a>
+        <a id="modal-playstore" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.954V2.768c.15-.37.362-.697.609-.954zm11.246 11.248l2.25 2.25-11.83 6.83 9.58-9.08zm0-2.124l-9.58-9.08 11.83 6.83-2.25 2.25zm1.488 1.062l3.434-1.982a1.868 1.868 0 0 1 0 3.238l-3.434 1.982-1.062-1.619 1.062-1.619z"/></svg>
+          <span>View on Google Play</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
