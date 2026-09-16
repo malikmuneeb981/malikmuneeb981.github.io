@@ -91,22 +91,40 @@ const portfolioData = {
       architecture: "Clean Modular Architecture with high-security transaction encryption, reactive StateFlow streams, and strict error-resilient payment flows."
     },
     {
-      id: "ai-photo-editor",
-      title: "AI Photo Editor (KMP / CMP)",
+      id: "video-downloader-kmp",
+      title: "Video Downloader KMP/CMP",
       category: "kmp",
       featured: true,
-      tagline: "Cross-platform AI-powered image editing and manipulation app built from scratch with Kotlin & Compose Multiplatform.",
-      bannerGradient: "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
-      tags: ["KMP", "Compose Multiplatform", "AI APIs", "Kotlin", "Coroutines"],
+      tagline: "Cross-platform high-speed video downloader and media playback application built with Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP).",
+      bannerGradient: "linear-gradient(135deg, #6366F1 0%, #EC4899 100%)",
+      tags: ["Kotlin Multiplatform", "Compose Multiplatform", "KMP / CMP", "Ktor Client", "Media Player", "Clean Architecture"],
       playStoreUrl: "",
+      githubUrl: "https://github.com/malikmuneeb981/Video_Downloader_KMP_CMP",
+      highlights: [
+        "Developed unified multiplatform application with 100% shared business logic and Compose Multiplatform UI.",
+        "Built high-performance multi-threaded video downloading engine with pause/resume and segment assembling.",
+        "Integrated cross-platform video & audio player with playback controls, resolution switching, and stream extraction.",
+        "Engineered reactive unidirectional data flow using Kotlin Coroutines, StateFlow, and Ktor HTTP client."
+      ],
+      architecture: "Kotlin Multiplatform Clean Architecture with shared CMP declarative UI, Ktor networking, and platform-specific decoders."
+    },
+    {
+      id: "ai-voice-translator",
+      title: "AI Voice Translator & Screen Reader",
+      category: "compose",
+      featured: true,
+      tagline: "Real-time on-screen translation and live voice interpretation powered by Android Accessibility Service and AI APIs.",
+      bannerGradient: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
+      tags: ["Accessibility Service", "Voice AI", "Jetpack Compose", "REST APIs", "Floating Overlay"],
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.lingolive.chat.translator&hl=en",
       githubUrl: "https://github.com/malikmuneeb981",
       highlights: [
-        "Built shared business and UI logic targeting multiple platforms using KMP & CMP.",
-        "Integrated high-speed neural AI image processing and enhancement REST APIs.",
-        "Created custom gesture-driven image transformation canvas in Compose.",
-        "Optimized memory usage for high-resolution photo filters and export rendering."
+        "Implemented Android Accessibility Service for instant on-screen text extraction & live translation overlay.",
+        "High-accuracy voice-to-voice translation with speech recognition APIs.",
+        "Floating HUD bubble with quick toggle translation controls.",
+        "Multi-language dictionary with pronunciation audio playback."
       ],
-      architecture: "Shared Kotlin Multiplatform core with declarative Compose Multiplatform UI layer and reactive state management."
+      architecture: "Android System Service architecture integrated with background translation dispatchers and floating Compose UI."
     },
     {
       id: "family-locator-realtime",
@@ -127,6 +145,41 @@ const portfolioData = {
       architecture: "Event-driven WebSocket architecture with background foreground service integration and MVVM data binding."
     },
     {
+      id: "ai-photo-editor",
+      title: "AI Photo Editor (KMP / CMP)",
+      category: "kmp",
+      featured: true,
+      tagline: "Cross-platform AI-powered image editing and manipulation app built from scratch with Kotlin & Compose Multiplatform.",
+      bannerGradient: "linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)",
+      tags: ["KMP", "Compose Multiplatform", "AI APIs", "Kotlin", "Coroutines"],
+      playStoreUrl: "",
+      githubUrl: "https://github.com/malikmuneeb981",
+      highlights: [
+        "Built shared business and UI logic targeting multiple platforms using KMP & CMP.",
+        "Integrated high-speed neural AI image processing and enhancement REST APIs.",
+        "Created custom gesture-driven image transformation canvas in Compose.",
+        "Optimized memory usage for high-resolution photo filters and export rendering."
+      ],
+      architecture: "Shared Kotlin Multiplatform core with declarative Compose Multiplatform UI layer and reactive state management."
+    },
+    {
+      id: "ai-sticker-generator",
+      title: "AI Sticker Generator (KMP / CMP)",
+      category: "kmp",
+      featured: true,
+      tagline: "AI-driven sticker and avatar creation platform with KMP/CMP shared codebase and WhatsApp sticker pack exporter.",
+      bannerGradient: "linear-gradient(135deg, #14B8A6 0%, #0D9488 100%)",
+      tags: ["KMP", "Compose Multiplatform", "Jetpack Compose", "AI APIs", "AdMob"],
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.ai.photo.avatar.sticker&hl=en",
+      githubUrl: "https://github.com/malikmuneeb981",
+      highlights: [
+        "Prompt-to-sticker generation using advanced generative AI APIs.",
+        "WhatsApp / Telegram sticker pack integration and direct export pipeline.",
+        "Shared business logic across multiplatform targets via Kotlin Multiplatform."
+      ],
+      architecture: "KMP Clean Architecture with Compose Multiplatform UI."
+    },
+    {
       id: "handshake-social",
       title: "Handshake - Location Social Discovery",
       category: "realtime",
@@ -145,24 +198,6 @@ const portfolioData = {
       architecture: "Unidirectional MVI architecture with Ktor WebSocket backend and Room message caching."
     },
     {
-      id: "ai-voice-translator",
-      title: "AI Voice Translator & Screen Reader",
-      category: "compose",
-      featured: false,
-      tagline: "Real-time on-screen translation and live voice interpretation powered by Android Accessibility Service and AI APIs.",
-      bannerGradient: "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
-      tags: ["Accessibility Service", "Voice AI", "Jetpack Compose", "REST APIs", "Floating Overlay"],
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.lingolive.chat.translator&hl=en",
-      githubUrl: "https://github.com/malikmuneeb981",
-      highlights: [
-        "Implemented Android Accessibility Service for instant on-screen text extraction & live translation overlay.",
-        "High-accuracy voice-to-voice translation with speech recognition APIs.",
-        "Floating HUD bubble with quick toggle translation controls.",
-        "Multi-language dictionary with pronunciation audio playback."
-      ],
-      architecture: "Android System Service architecture integrated with background translation dispatchers and floating Compose UI."
-    },
-    {
       id: "voice-typing-keyboards",
       title: "Voice Typing & Urdu Keyboard Suite",
       category: "compose",
@@ -179,40 +214,6 @@ const portfolioData = {
         "Monetized with Google AdMob banners and interstitials."
       ],
       architecture: "Low-level Android IME engine with custom view rendering and high-frequency touch event processing."
-    },
-    {
-      id: "ai-sticker-generator",
-      title: "AI Sticker Generator (KMP / CMP)",
-      category: "kmp",
-      featured: false,
-      tagline: "AI-driven sticker and avatar creation platform with KMP/CMP shared codebase and WhatsApp sticker pack exporter.",
-      bannerGradient: "linear-gradient(135deg, #14B8A6 0%, #0D9488 100%)",
-      tags: ["KMP", "Compose Multiplatform", "Jetpack Compose", "AI APIs", "AdMob"],
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.ai.photo.avatar.sticker&hl=en",
-      githubUrl: "https://github.com/malikmuneeb981",
-      highlights: [
-        "Prompt-to-sticker generation using advanced generative AI APIs.",
-        "WhatsApp / Telegram sticker pack integration and direct export pipeline.",
-        "Shared business logic across multiplatform targets via Kotlin Multiplatform."
-      ],
-      architecture: "KMP Clean Architecture with Compose Multiplatform UI."
-    },
-    {
-      id: "video-downloader-player",
-      title: "Video Downloader & Media Player",
-      category: "compose",
-      featured: false,
-      tagline: "High-speed multi-threaded video downloader and media playback engine built with REST APIs and Jetpack Compose.",
-      bannerGradient: "linear-gradient(135deg, #84CC16 0%, #65A30D 100%)",
-      tags: ["Jetpack Compose", "Media Engine", "REST APIs", "Foreground Service", "RoomDb"],
-      playStoreUrl: "",
-      githubUrl: "https://github.com/malikmuneeb981",
-      highlights: [
-        "Multi-threaded background downloading with pause, resume, and segment assembly.",
-        "Hardware-accelerated media player with subtitle and audio track switching.",
-        "Foreground notification service with progress tracking."
-      ],
-      architecture: "Repository pattern with WorkManager background scheduling and Room DB download status tracking."
     },
     {
       id: "prayer-quran-qibla",
@@ -236,41 +237,41 @@ const portfolioData = {
   experience: [
     {
       role: "Senior Android Engineer",
-      company: "AKSA-SDS",
+      company: "AKSA-SDS (JazzCash)",
       location: "Islamabad, Pakistan",
-      period: "06/2025 - Present",
-      description: "Leading the integration of core features across multiple mobile platforms. Implemented JazzCash mobile payment gateway and C2C Bulk Payment processing systems. Collaborated across engineering teams to enhance Jazz Communities ecosystem. Engineered Buy Now Pay Later (BNPL) credit installment workflows, managed full App Localization for multi-language support, and conducted architectural code reviews and mentorship."
+      period: "06/2025 – 08/2026",
+      description: "Spearheaded the architecture and feature development of national-scale mobile FinTech applications (JazzCash & JazzCash Business) serving millions of daily active users. Architected and integrated end-to-end payment rails including Veem (Global Payment Platform), C2C Bulk Payments, and Yeylo (Buy Now Pay Later / BNPL) with strict transactional integrity. Built interactive merchant transaction dashboards, enforced MVVM & Clean Architecture with Dagger-Hilt and Coroutines/Flow, and engineered nationwide App Localization infrastructure."
     },
     {
       role: "Android Developer",
       company: "Funprime Technology",
       location: "Islamabad, Pakistan",
-      period: "03/2023 - 03/2025",
-      description: "Spearheaded end-to-end development of 7+ production applications from scratch. Built cross-platform AI Photo Editor and AI Sticker Generator using KMP/CMP. Developed real-time AI Voice Translator using Android Accessibility Service, created custom Voice Typing Keyboards, and engineered live GPS tracking & messaging apps (Family Locator, Handshake) using Google Maps, Location Services, and Ktor WebSockets backend."
+      period: "03/2023 – 03/2025",
+      description: "Designed, built, and shipped 5+ production Android applications from scratch using Kotlin, Jetpack Compose, Coroutines, and RESTful APIs. Engineered low-latency real-time tracking and social discovery platforms (Family Locator, Handshake) leveraging Google Maps API, Location Services, WebSockets, and Ktor backends. Developed AI applications (AI Photo Editor, AI Voice Translator, AI Sticker Generator) with Accessibility Services, and maintained >99.8% crash-free session rate."
     },
     {
       role: "Android Developer",
       company: "Solution of Technologies",
       location: "Rawalpindi, Pakistan",
-      period: "08/2022 - 03/2023",
-      description: "Developed custom Urdu Keyboard with Voice Typing integration and stylish font customization. Created full-featured Islamic utility application (Prayer Timing, Quran & Qibla Finder) with sensor-based compass and accurate prayer timings. Integrated Google AdMob monetization and delivered highly engaging, responsive mobile interfaces."
+      period: "08/2022 – 03/2023",
+      description: "Developed custom native Input Method Editor (IME) applications (Urdu Keyboard with Voice Typing, Stylish Fonts Keyboard) with real-time speech-to-text recognition and low input latency. Engineered algorithmic prayer timing calculations and offline Quran access with Room Database and SQLite. Boosted Play Store app ratings to 4.6/5 stars across 500K+ downloads."
     },
     {
       role: "Junior Android Developer",
       company: "Techinn Technologies",
       location: "Rawalpindi, Pakistan",
-      period: "10/2021 - 08/2022",
-      description: "Engineered on-device image processing and transformation features (Gender Swap) using native algorithms without external paid API dependencies. Gained extensive hands-on experience in Android lifecycle, view rendering, and performance optimization."
+      period: "10/2021 – 08/2022",
+      description: "Engineered native on-device image manipulation algorithms (Gender Swap) utilizing low-level Android Bitmap and Canvas processing without external third-party API dependencies. Collaborated with senior engineers using Git, mastering Android component lifecycles, background threading, and clean OOP architecture in Java and Kotlin."
     }
   ],
 
   education: [
     {
-      degree: "Bachelor of Science in Software Engineering",
+      degree: "Bachelor of Science in Software Engineering (BS SE)",
       institution: "BUITEMS",
       location: "Quetta, Pakistan",
       period: "Graduated: 03/2021",
-      details: "Comprehensive curriculum focusing on Mobile Computing, Software Architecture, Distributed Systems, Data Structures, and Algorithms."
+      details: "Balochistan University of Information Technology, Engineering and Management Sciences. Focus on Mobile Computing, Software Architecture, Distributed Systems, Data Structures, and Algorithms."
     }
   ]
 };

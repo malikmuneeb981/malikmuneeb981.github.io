@@ -998,6 +998,45 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: var(--accent-android);
   border: 1px solid var(--border-subtle);
+  z-index: 2;
+}
+
+.project-star-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FBBF24;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 2px 10px rgba(251, 191, 36, 0.15);
+  z-index: 2;
+}
+
+.project-star-badge svg {
+  filter: drop-shadow(0 0 3px rgba(251, 191, 36, 0.6));
+}
+
+.modal-star-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FBBF24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: var(--radius-full);
+  padding: 0.2rem 0.65rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 .project-content {

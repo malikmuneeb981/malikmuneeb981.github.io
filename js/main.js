@@ -180,6 +180,14 @@ function renderProjects(projects) {
     <article class="project-card" data-id="${p.id}">
       <div class="project-banner" style="background: ${p.bannerGradient};">
         <span class="project-badge-top">${p.category.toUpperCase()}</span>
+        ${p.featured ? `
+          <span class="project-star-badge" title="Featured / Starred Project">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#FBBF24" stroke="#FBBF24" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Starred</span>
+          </span>
+        ` : ''}
         <div class="mini-phone-mockup">
           <div class="phone-notch"></div>
           <div class="phone-screen">
@@ -323,7 +331,11 @@ function openProjectModal(projectId) {
   const githubLink = document.getElementById('modal-github');
   const playStoreLink = document.getElementById('modal-playstore');
 
-  if (titleEl) titleEl.textContent = project.title;
+  if (titleEl) {
+    titleEl.innerHTML = project.featured 
+      ? `${project.title} <span class="modal-star-badge">★ Starred</span>` 
+      : project.title;
+  }
   if (taglineEl) taglineEl.textContent = project.tagline;
 
   if (tagsEl) {
