@@ -91,6 +91,24 @@ const portfolioData = {
       architecture: "Clean Modular Architecture with high-security transaction encryption, reactive StateFlow streams, and strict error-resilient payment flows."
     },
     {
+      id: "family-locator-realtime",
+      title: "Family Locator & Live Tracking",
+      category: "KMP/CMP",
+      featured: true,
+      tagline: "Real-time location sharing and safety monitoring app using Google Maps, Android Location Services, and Ktor WebSockets.",
+      bannerGradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
+      tags: ["Google Maps", "Location Service", "Ktor Backend", "WebSockets", "Services", "RoomDb"],
+      playStoreUrl: "",
+      githubUrl: "https://github.com/malikmuneeb981/Family_Locator_KMP_CMP_Mobile",
+      highlights: [
+        "Low-latency real-time GPS coordinate streaming powered by WebSockets and Ktor backend.",
+        "Battery-efficient background tracking utilizing Android Location Service and WorkManager.",
+        "Custom interactive Google Maps markers, safe-zone geofencing, and arrival alerts.",
+        "Offline-first trajectory storage with automatic sync via Room Database."
+      ],
+      architecture: "Event-driven WebSocket architecture with background foreground service integration and MVVM data binding."
+    },
+    {
       id: "video-downloader-kmp",
       title: "Video Downloader KMP/CMP",
       category: "kmp",
@@ -125,24 +143,6 @@ const portfolioData = {
         "Multi-language dictionary with pronunciation audio playback."
       ],
       architecture: "Android System Service architecture integrated with background translation dispatchers and floating Compose UI."
-    },
-    {
-      id: "family-locator-realtime",
-      title: "Family Locator & Live Tracking",
-      category: "realtime",
-      featured: true,
-      tagline: "Real-time location sharing and safety monitoring app using Google Maps, Android Location Services, and Ktor WebSockets.",
-      bannerGradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
-      tags: ["Google Maps", "Location Service", "Ktor Backend", "WebSockets", "WorkManager", "RoomDb"],
-      playStoreUrl: "",
-      githubUrl: "https://github.com/malikmuneeb981",
-      highlights: [
-        "Low-latency real-time GPS coordinate streaming powered by WebSockets and Ktor backend.",
-        "Battery-efficient background tracking utilizing Android Location Service and WorkManager.",
-        "Custom interactive Google Maps markers, safe-zone geofencing, and arrival alerts.",
-        "Offline-first trajectory storage with automatic sync via Room Database."
-      ],
-      architecture: "Event-driven WebSocket architecture with background foreground service integration and MVVM data binding."
     },
     {
       id: "ai-photo-editor",
