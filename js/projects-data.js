@@ -91,6 +91,67 @@ const portfolioData = {
       architecture: "Clean Modular Architecture with high-security transaction encryption, reactive StateFlow streams, and strict error-resilient payment flows."
     },
     {
+      id: "fintech-jazzcash-business",
+      title: "JazzCash Business App",
+      category: "fintech",
+      featured: true,
+      tagline: "Enterprise merchant banking & digital payment platform enabling QR collections, instant settlements, and salary disbursements.",
+      bannerGradient: "linear-gradient(135deg, #059669 0%, #047857 50%, #0F172A 100%)",
+      tags: ["Kotlin", "Merchant QR", "Fintech Security", "Biometrics", "Instant Settlement", "Clean Architecture", "REST APIs"],
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.ibm.jazzcashmerchant&hl=en",
+      githubUrl: "",
+      highlights: [
+        "Engineered secure merchant digital payment collections via dynamic and static QR code generation.",
+        "Built instant settlement workflows and high-speed bank-to-wallet funds transfer modules.",
+        "Implemented multi-tier cashier and sub-account management with role-based authorization.",
+        "Integrated biometric authentication, cryptographic payment tokenization, and SSL pinning.",
+        "Optimized real-time daily sales analytics, revenue transaction logs, and merchant statement exports."
+      ],
+      architecture: "Clean Modular MVVM Architecture with reactive StateFlow, encrypted Keystore local storage, and secure transactional API middleware."
+    },
+    {
+      id: "family-locator-realtime",
+      title: "Family Locator & Live Tracking (KMP / CMP)",
+      category: "kmp",
+      categories: ["kmp", "realtime"],
+      badge: "KMP / CMP",
+      featured: true,
+      tagline: "Cross-platform real-time location sharing and safety monitoring app built with Kotlin Multiplatform (KMP), Compose Multiplatform (CMP), Google Maps, and Ktor WebSockets.",
+      bannerGradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
+      tags: ["Kotlin Multiplatform", "Compose Multiplatform", "Google Maps", "Location Service", "Ktor Backend", "WebSockets", "RoomDb"],
+      playStoreUrl: "",
+      githubUrl: "https://github.com/malikmuneeb981/Family_Locator_KMP_CMP_Mobile",
+      highlights: [
+        "Architected cross-platform codebase using Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP) for shared business logic and UI.",
+        "Low-latency real-time GPS coordinate streaming powered by WebSockets and Ktor backend.",
+        "Battery-efficient background tracking utilizing native platform location services and WorkManager.",
+        "Custom interactive Google Maps markers, safe-zone geofencing, and arrival alerts.",
+        "Offline-first trajectory storage with automatic sync via Room Database."
+      ],
+      architecture: "Kotlin Multiplatform Clean Architecture with shared Compose Multiplatform UI, event-driven WebSocket streaming, and native location service integrations."
+    },
+    {
+      id: "family-locator-backend-ktor",
+      title: "Family Locator & Live Tracking Backend (Ktor)",
+      category: "backend",
+      categories: ["backend", "realtime"],
+      badge: "KTOR BACKEND",
+      featured: true,
+      tagline: "High-concurrency asynchronous backend service & WebSocket microservice built with Kotlin & Ktor Server for low-latency live GPS location streaming.",
+      bannerGradient: "linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #0284C7 100%)",
+      tags: ["Ktor Server", "Kotlin", "WebSockets", "Coroutines", "Netty Engine", "Real-Time APIs", "PostgreSQL", "Docker"],
+      playStoreUrl: "",
+      githubUrl: "https://github.com/malikmuneeb981/Family_Locator_Ktor",
+      highlights: [
+        "Architected scalable asynchronous backend microservice using Kotlin Coroutines and Ktor Server Netty engine.",
+        "Engineered bi-directional WebSocket channels enabling sub-50ms live location coordinate broadcasting.",
+        "Implemented group/family room clustering, connection heartbeats, and graceful reconnect handlers.",
+        "Integrated token-based secure authentication and location history persistence.",
+        "Containerized with Docker for rapid multi-environment deployment and cloud orchestration."
+      ],
+      architecture: "Asynchronous Coroutine-driven event loop on Ktor Netty engine with WebSocket session multiplexing and low-latency coordinate caching."
+    },
+    {
       id: "video-downloader-kmp",
       title: "Video Downloader KMP/CMP",
       category: "kmp",
@@ -125,24 +186,6 @@ const portfolioData = {
         "Multi-language dictionary with pronunciation audio playback."
       ],
       architecture: "Android System Service architecture integrated with background translation dispatchers and floating Compose UI."
-    },
-    {
-      id: "family-locator-realtime",
-      title: "Family Locator & Live Tracking",
-      category: "realtime",
-      featured: true,
-      tagline: "Real-time location sharing and safety monitoring app using Google Maps, Android Location Services, and Ktor WebSockets.",
-      bannerGradient: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
-      tags: ["Google Maps", "Location Service", "Ktor Backend", "WebSockets", "WorkManager", "RoomDb"],
-      playStoreUrl: "",
-      githubUrl: "https://github.com/malikmuneeb981",
-      highlights: [
-        "Low-latency real-time GPS coordinate streaming powered by WebSockets and Ktor backend.",
-        "Battery-efficient background tracking utilizing Android Location Service and WorkManager.",
-        "Custom interactive Google Maps markers, safe-zone geofencing, and arrival alerts.",
-        "Offline-first trajectory storage with automatic sync via Room Database."
-      ],
-      architecture: "Event-driven WebSocket architecture with background foreground service integration and MVVM data binding."
     },
     {
       id: "ai-photo-editor",

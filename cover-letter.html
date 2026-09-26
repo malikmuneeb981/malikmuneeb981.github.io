@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter - Malik Muneeb | Senior Android Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: 'Outfit', var(--font-main);
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --color-primary: #0f172a;
+      --color-secondary: #334155;
+      --color-muted: #64748b;
+      --color-accent: #059669;
+      --color-accent-subtle: #ecfdf5;
+      --color-border: #e2e8f0;
+      --color-bg-page: #f1f5f9;
+      --color-paper: #ffffff;
+      
+      --shadow-paper: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--color-bg-page);
+      color: var(--color-secondary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 2rem 1rem;
+    }
+
+    /* Top Control Bar */
+    .toolbar-container {
+      max-width: 850px;
+      margin: 0 auto 1.5rem auto;
+      background: #ffffff;
+      padding: 1.25rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--color-border);
+    }
+
+    .toolbar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--color-border);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .toolbar-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: #0f172a;
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: #1e293b;
+    }
+
+    .btn-secondary {
+      background: #f8fafc;
+      color: var(--color-secondary);
+      border-color: var(--color-border);
+    }
+    .btn-secondary:hover {
+      background: #f1f5f9;
+      color: var(--color-primary);
+    }
+
+    .btn-accent {
+      background: var(--color-accent);
+      color: #ffffff;
+    }
+    .btn-accent:hover {
+      background: #047857;
+    }
+
+    .toolbar-controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .control-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-muted);
+    }
+
+    .control-input, .control-select {
+      padding: 0.45rem 0.65rem;
+      font-size: 0.85rem;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      font-family: inherit;
+      background: #ffffff;
+      color: var(--color-primary);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .control-input:focus, .control-select:focus {
+      border-color: #0f172a;
+    }
+
+    /* Paper Document Canvas */
+    .paper-sheet {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--color-paper);
+      padding: 3.5rem 3.75rem;
+      border-radius: 4px;
+      box-shadow: var(--shadow-paper);
+      border: 1px solid var(--color-border);
+      position: relative;
+    }
+
+    /* Header Styling */
+    .doc-header {
+      border-bottom: 2px solid var(--color-primary);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .candidate-name {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .candidate-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-top: 0.25rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .candidate-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      margin-top: 0.6rem;
+    }
+
+    .candidate-meta a {
+      color: var(--color-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .candidate-meta a:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    .meta-divider {
+      color: #cbd5e1;
+    }
+
+    /* Letter Body */
+    .doc-date {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .doc-recipient {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--color-primary);
+    }
+
+    .salutation {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--color-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .letter-body p {
+      font-size: 0.95rem;
+      line-height: 1.72;
+      color: #1e293b;
+      margin-bottom: 1.25rem;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .highlight-span {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .sign-off {
+      margin-top: 2rem;
+    }
+
+    .sign-off p {
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+      color: #1e293b;
+    }
+
+    .signature-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-top: 0.75rem;
+    }
+
+    /* Editable highlight hint */
+    [contenteditable="true"] {
+      outline: 1px dashed transparent;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    [contenteditable="true"]:hover {
+      outline-color: #cbd5e1;
+      background: #f8fafc;
+    }
+
+    [contenteditable="true"]:focus {
+      outline: 2px solid #3b82f6;
+      background: #eff6ff;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Print Stylesheet for 1-Page Perfection */
+    @media print {
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+        color: #000000 !important;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .paper-sheet {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+
+      .letter-body p {
+        font-size: 10.5pt !important;
+        line-height: 1.55 !important;
+        margin-bottom: 12pt !important;
+        color: #111827 !important;
+      }
+
+      .doc-header {
+        border-bottom: 2pt solid #000000 !important;
+        margin-bottom: 16pt !important;
+        padding-bottom: 10pt !important;
+      }
+
+      .candidate-name {
+        font-size: 18pt !important;
+        color: #000000 !important;
+      }
+
+      .candidate-title {
+        color: #047857 !important;
+        font-size: 10pt !important;
+      }
+
+      .candidate-meta, .doc-date, .doc-recipient {
+        font-size: 9.5pt !important;
+      }
+
+      [contenteditable="true"] {
+        outline: none !important;
+        background: transparent !important;
+      }
+
+      @page {
+        size: A4;
+        margin: 18mm 16mm;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+      .paper-sheet {
+        padding: 2rem 1.5rem;
+      }
+      .candidate-name {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Interactive Controls Bar (Hidden in Print) -->
+  <aside class="toolbar-container no-print" aria-label="Cover Letter Toolbar">
+    <div class="toolbar-header">
+      <div class="toolbar-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        <span>Cover Letter Generator</span>
+      </div>
+      <div class="toolbar-actions">
+        <a href="index.html" class="btn btn-secondary">
+          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Portfolio
+        </a>
+        <button id="copyBtn" class="btn btn-secondary" title="Copy Plain Text">
+          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          Copy Text
+        </button>
+        <button id="printBtn" class="btn btn-primary" title="Print or Save as PDF">
+          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+          </svg>
+          Print / PDF
+        </button>
+      </div>
+    </div>
+
+    <div class="toolbar-controls">
+      <div class="control-group">
+        <label class="control-label" for="inputCompany">Target Company</label>
+        <input type="text" id="inputCompany" class="control-input" placeholder="e.g. Acme Corp" value="[Company Name]">
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputRole">Role Title</label>
+        <input type="text" id="inputRole" class="control-input" placeholder="e.g. Senior Android Engineer" value="Android Developer">
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="selectSalutation">Salutation Style</label>
+        <select id="selectSalutation" class="control-select">
+          <option value="Dear Hiring Manager,">Dear Hiring Manager,</option>
+          <option value="Dear [Company Name] Recruiting Team,">Dear [Company Name] Recruiting Team,</option>
+          <option value="Dear [Company Name] Engineering Team,">Dear [Company Name] Engineering Team,</option>
+          <option value="custom">Custom Recipient Name...</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="selectVariant">Letter Variant</label>
+        <select id="selectVariant" class="control-select">
+          <option value="standard">Standard (Remote & Relocation Open)</option>
+          <option value="relocation">Relocation Focused</option>
+          <option value="remote">Remote / EU Timezones</option>
+          <option value="direct">Direct & Concise (EU Style)</option>
+        </select>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Printable Paper Sheet -->
+  <main class="paper-sheet" id="letterContainer">
+    <!-- Header -->
+    <header class="doc-header">
+      <h1 class="candidate-name">Malik Muneeb</h1>
+      <div class="candidate-title">Senior Android Engineer • Mobile Architecture • FinTech</div>
+      <div class="candidate-meta">
+        <span>📍 Islamabad, Pakistan</span>
+        <span class="meta-divider">•</span>
+        <span>📞 +92 347 3366889</span>
+        <span class="meta-divider">•</span>
+        <span>✉️ <a href="mailto:malikmuneeb981@gmail.com">malikmuneeb981@gmail.com</a></span>
+        <span class="meta-divider">•</span>
+        <span>🌐 <a href="https://malikmuneeb981.github.io" target="_blank">malikmuneeb981.github.io</a></span>
+        <span class="meta-divider">•</span>
+        <span>💼 <a href="https://linkedin.com/in/malikmuneeb981" target="_blank">LinkedIn</a></span>
+        <span class="meta-divider">•</span>
+        <span>💻 <a href="https://github.com/malikmuneeb981" target="_blank">GitHub</a></span>
+      </div>
+    </header>
+
+    <!-- Date & Salutation -->
+    <div class="doc-date" id="docDate" contenteditable="true">September 16, 2026</div>
+    <div class="salutation" id="docSalutation" contenteditable="true">Dear Hiring Manager,</div>
+
+    <!-- Letter Body -->
+    <article class="letter-body" id="letterContent" contenteditable="true">
+      <p id="p1">
+        I'm writing to apply for the <span class="highlight-span" id="spanRole">Android Developer</span> position at <span class="highlight-span" id="spanCompany">[Company Name]</span>. I'm a Senior Android Engineer with over five years of experience building production Android applications, currently architecting mobile FinTech platforms at national scale for JazzCash — Pakistan's largest digital payments provider, serving millions of daily active users.
+      </p>
+
+      <p id="p2">
+        At AKSA-SDS I lead architecture and feature development across the JazzCash consumer and merchant apps. I've integrated end-to-end payment rails including Veem global payments, C2C bulk transfers, and a Buy Now Pay Later (BNPL) product, all under strict requirements for transactional integrity and encryption. I also built the real-time reporting dashboards merchants use to track settlement history and daily revenue. That work has taught me how to ship features where a single failed transaction is not an acceptable outcome, and where performance matters on low-end devices and unreliable networks alike.
+      </p>
+
+      <p id="p3">
+        Technically, I work primarily in Kotlin with Jetpack Compose, Coroutines and Flow, Dagger-Hilt, and Ktor, applying MVVM and Clean Architecture across multi-module codebases. I've also worked with Kotlin Multiplatform (KMP/CMP), which I find particularly compelling for teams looking to share business logic across platforms without compromising native UI quality. In earlier roles I shipped more than five Android products from scratch, including real-time location tracking systems using WebSockets and Google Maps, and on-device image processing built directly on Bitmap and Canvas rather than external APIs. I care about the unglamorous parts too — profiling with LeakCanary, holding crash-free sessions above 99.8%, and keeping frame rendering smooth.
+      </p>
+
+      <p id="p4">
+        I'd welcome the opportunity to bring this experience to your team, and I'm open to both remote work and relocation depending on the role. I'd be glad to discuss my background in more detail at your convenience.
+      </p>
+    </article>
+
+    <!-- Sign-off -->
+    <div class="sign-off">
+      <p>Thank you for your time and consideration.</p>
+      <p>Sincerely,</p>
+      <div class="signature-name">Malik Muneeb</div>
+    </div>
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast no-print">
+    <svg width="18" height="18" fill="none" stroke="#10b981" viewBox="0 0 24 24" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+    </svg>
+    <span id="toastMsg">Cover letter copied to clipboard!</span>
+  </div>
+
+  <!-- Interactive Logic Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputCompany = document.getElementById('inputCompany');
+      const inputRole = document.getElementById('inputRole');
+      const selectSalutation = document.getElementById('selectSalutation');
+      const selectVariant = document.getElementById('selectVariant');
+      const spanCompany = document.getElementById('spanCompany');
+      const spanRole = document.getElementById('spanRole');
+      const docSalutation = document.getElementById('docSalutation');
+      const docDate = document.getElementById('docDate');
+      const p4 = document.getElementById('p4');
+      const printBtn = document.getElementById('printBtn');
+      const copyBtn = document.getElementById('copyBtn');
+      const toast = document.getElementById('toast');
+
+      // Set current date formatted (e.g., September 16, 2026)
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      docDate.textContent = new Date().toLocaleDateString('en-US', options);
+
+      // Company Input Sync
+      function updateCompany() {
+        const val = inputCompany.value.trim() || '[Company Name]';
+        spanCompany.textContent = val;
+        if (selectSalutation.value.includes('[Company Name]')) {
+          docSalutation.textContent = selectSalutation.value.replace('[Company Name]', val);
+        }
+      }
+      inputCompany.addEventListener('input', updateCompany);
+
+      // Role Input Sync
+      function updateRole() {
+        const val = inputRole.value.trim() || 'Android Developer';
+        spanRole.textContent = val;
+      }
+      inputRole.addEventListener('input', updateRole);
+
+      // Salutation Selector Sync
+      selectSalutation.addEventListener('change', () => {
+        const val = selectSalutation.value;
+        const company = inputCompany.value.trim() || '[Company Name]';
+        if (val === 'custom') {
+          const customName = prompt('Enter recipient name (e.g. "Dear Mr. Smith," or "Dear Sarah,"):', 'Dear Hiring Manager,');
+          if (customName) docSalutation.textContent = customName;
+        } else {
+          docSalutation.textContent = val.replace('[Company Name]', company);
+        }
+      });
+
+      // Variant Selector Sync
+      const variants = {
+        standard: "I'd welcome the opportunity to bring this experience to your team, and I'm open to both remote work and relocation depending on the role. I'd be glad to discuss my background in more detail at your convenience.",
+        relocation: "I'm keen to bring deep native Android expertise to your team building at scale. I'm fully prepared to relocate and would welcome the opportunity to discuss how I can contribute to your engineering goals.",
+        remote: "I'm based in Islamabad and highly experienced collaborating across European and international time zones in agile distributed teams. I would welcome the opportunity to discuss how I can contribute remotely.",
+        direct: "I look forward to discussing how my experience in high-scale FinTech architecture and Kotlin multi-module engineering can support your product roadmap."
+      };
+
+      selectVariant.addEventListener('change', () => {
+        const key = selectVariant.value;
+        if (variants[key]) {
+          p4.textContent = variants[key];
+        }
+      });
+
+      // Print / PDF Button
+      printBtn.addEventListener('click', () => {
+        window.print();
+      });
+
+      // Copy Text Button
+      copyBtn.addEventListener('click', () => {
+        const headerText = `MALIK MUNEEB\nSenior Android Engineer • Mobile Architecture • FinTech\nIslamabad, Pakistan | +92 347 3366889 | malikmuneeb981@gmail.com\nmalikmuneeb981.github.io | LinkedIn | GitHub\n\n`;
+        const dateText = `${docDate.textContent.trim()}\n\n`;
+        const salutationText = `${docSalutation.textContent.trim()}\n\n`;
+        
+        const p1Text = document.getElementById('p1').textContent.replace(/\s+/g, ' ').trim();
+        const p2Text = document.getElementById('p2').textContent.replace(/\s+/g, ' ').trim();
+        const p3Text = document.getElementById('p3').textContent.replace(/\s+/g, ' ').trim();
+        const p4Text = document.getElementById('p4').textContent.replace(/\s+/g, ' ').trim();
+        
+        const bodyText = `${p1Text}\n\n${p2Text}\n\n${p3Text}\n\n${p4Text}\n\n`;
+        const signOffText = `Thank you for your time and consideration.\nSincerely,\nMalik Muneeb`;
+
+        const fullLetter = headerText + dateText + salutationText + bodyText + signOffText;
+
+        navigator.clipboard.writeText(fullLetter).then(() => {
+          showToast('Cover letter copied to clipboard!');
+        }).catch(() => {
+          showToast('Could not copy to clipboard.');
+        });
+      });
+
+      function showToast(msg) {
+        toast.querySelector('#toastMsg').textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2500);
+      }
+    });
+  </script>
+</body>
+</html>
