@@ -10,7 +10,7 @@ const portfolioData = {
     email: "malikmuneeb981@gmail.com",
     phone: "+92 347 3366889",
     github: "https://github.com/malikmuneeb981",
-    linkedin: "https://linkedin.com/in/malikmuneeb981",
+    linkedin: "https://www.linkedin.com/in/malik-muneeb-59b293165/",
     playStore: "https://play.google.com",
     resume: "assets/Malik_Muneeb_Resume.pdf",
     bio: "Senior Android Developer with 5+ years of experience and a BS in Software Engineering. Proven expertise in building enterprise fintech systems and high-scale consumer applications from scratch. Deeply skilled in Kotlin, Jetpack Compose, KMP/CMP, Ktor, WebSockets, and modern reactive architecture, with foundational knowledge of iOS and SwiftUI."
